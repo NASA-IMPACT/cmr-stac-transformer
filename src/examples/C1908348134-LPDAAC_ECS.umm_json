@@ -1,0 +1,460 @@
+{
+    "hits": 1,
+    "took": 14,
+    "items": [
+        {
+            "meta": {
+                "revision-id": 23,
+                "deleted": false,
+                "format": "application/vnd.nasa.cmr.umm+json",
+                "provider-id": "LPDAAC_ECS",
+                "user-id": "thouska",
+                "has-formats": false,
+                "associations": {
+                    "services": [
+                        "S1568897222-LPDAAC_ECS",
+                        "S1568897323-LPDAAC_ECS"
+                    ]
+                },
+                "has-spatial-subsetting": true,
+                "native-id": "mmt_collection_12036",
+                "has-transforms": true,
+                "association-details": {
+                    "services": [
+                        {
+                            "concept-id": "S1568897222-LPDAAC_ECS"
+                        },
+                        {
+                            "concept-id": "S1568897323-LPDAAC_ECS"
+                        }
+                    ]
+                },
+                "has-variables": true,
+                "concept-id": "C1908348134-LPDAAC_ECS",
+                "revision-date": "2022-09-27T18:40:16.062Z",
+                "has-temporal-subsetting": true,
+                "concept-type": "collection"
+            },
+            "umm": {
+                "CollectionCitations": [
+                    {
+                        "Title": "GEDI L2A Elevation and Height Metrics Data Global Footprint Level V002",
+                        "Creator": "Ralph Dubayah, Michelle Hofton, James Blair, John Armston, Hao Tang, Scott Luthcke",
+                        "SeriesName": "GEDI02_A.002",
+                        "ReleaseDate": "2021-04-16T00:00:00.000Z",
+                        "Publisher": "NASA EOSDIS Land Processes DAAC",
+                        "OtherCitationDetails": "The DOI landing page provides citations in APA and Chicago styles.",
+                        "OnlineResource": {
+                            "Name": "DOI Landing Page",
+                            "Linkage": "https://doi.org/10.5067/GEDI/GEDI02_A.002"
+                        }
+                    }
+                ],
+                "AdditionalAttributes": [
+                    {
+                        "Name": "identifier_product_doi",
+                        "Description": "Digital object identifier that uniquely identifies this data product",
+                        "Value": "10.5067/GEDI/GEDI02_A.002",
+                        "DataType": "STRING"
+                    },
+                    {
+                        "Name": "identifier_product_doi_authority",
+                        "Description": "URL of the digital object identifier resolving authority",
+                        "Value": "https://doi.org",
+                        "DataType": "STRING"
+                    },
+                    {
+                        "Name": "Reference_Ground_Track",
+                        "Description": "GEDI reference ground track number",
+                        "DataType": "INT"
+                    },
+                    {
+                        "Name": "SEGMENT_NUMBER",
+                        "Description": "The number of the segment located within the orbit",
+                        "DataType": "STRING",
+                        "Group": "s"
+                    }
+                ],
+                "SpatialExtent": {
+                    "SpatialCoverageType": "HORIZONTAL",
+                    "HorizontalSpatialDomain": {
+                        "Geometry": {
+                            "CoordinateSystem": "CARTESIAN",
+                            "BoundingRectangles": [
+                                {
+                                    "NorthBoundingCoordinate": 90,
+                                    "WestBoundingCoordinate": -180,
+                                    "EastBoundingCoordinate": 180,
+                                    "SouthBoundingCoordinate": -90
+                                }
+                            ]
+                        },
+                        "ResolutionAndCoordinateSystem": {
+                            "HorizontalDataResolution": {
+                                "GenericResolutions": [
+                                    {
+                                        "XDimension": 25,
+                                        "YDimension": 25,
+                                        "Unit": "Meters"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    "GranuleSpatialRepresentation": "GEODETIC"
+                },
+                "CollectionProgress": "ACTIVE",
+                "ScienceKeywords": [
+                    {
+                        "Category": "EARTH SCIENCE",
+                        "Topic": "LAND SURFACE",
+                        "Term": "TOPOGRAPHY"
+                    },
+                    {
+                        "Category": "EARTH SCIENCE",
+                        "Topic": "SPECTRAL/ENGINEERING",
+                        "Term": "LIDAR"
+                    },
+                    {
+                        "Category": "EARTH SCIENCE",
+                        "Topic": "BIOSPHERE",
+                        "Term": "VEGETATION",
+                        "VariableLevel1": "PLANT PHENOLOGY"
+                    },
+                    {
+                        "Category": "EARTH SCIENCE",
+                        "Topic": "BIOSPHERE",
+                        "Term": "VEGETATION",
+                        "VariableLevel1": "VEGETATION COVER"
+                    },
+                    {
+                        "Category": "EARTH SCIENCE",
+                        "Topic": "BIOSPHERE",
+                        "Term": "VEGETATION",
+                        "VariableLevel1": "CANOPY CHARACTERISTICS"
+                    },
+                    {
+                        "Category": "EARTH SCIENCE",
+                        "Topic": "BIOSPHERE",
+                        "Term": "VEGETATION",
+                        "VariableLevel1": "CANOPY CHARACTERISTICS",
+                        "VariableLevel2": "VEGETATION HEIGHT"
+                    }
+                ],
+                "TemporalExtents": [
+                    {
+                        "EndsAtPresentFlag": true,
+                        "RangeDateTimes": [
+                            {
+                                "BeginningDateTime": "2019-03-25T00:00:00.000Z"
+                            }
+                        ]
+                    }
+                ],
+                "ProcessingLevel": {
+                    "Id": "2"
+                },
+                "DOI": {
+                    "DOI": "10.5067/GEDI/GEDI02_A.002",
+                    "Authority": "https://doi.org"
+                },
+                "ShortName": "GEDI02_A",
+                "EntryTitle": "GEDI L2A Elevation and Height Metrics Data Global Footprint Level V002",
+                "AccessConstraints": {
+                    "Description": "None"
+                },
+                "RelatedUrls": [
+                    {
+                        "Description": "Earthdata Search allows users to search, discover, visualize, refine, and access NASA Earth Observation data.",
+                        "URLContentType": "DistributionURL",
+                        "Type": "GET DATA",
+                        "Subtype": "Earthdata Search",
+                        "URL": "https://search.earthdata.nasa.gov/search?q=C1908348134-LPDAAC_ECS"
+                    },
+                    {
+                        "Description": "LP DAAC Data Pool provides direct access to available products via HTTPS.",
+                        "URLContentType": "DistributionURL",
+                        "Type": "GET DATA",
+                        "Subtype": "DATA TREE",
+                        "URL": "https://e4ftl01.cr.usgs.gov/GEDI/GEDI02_A.002/"
+                    },
+                    {
+                        "Description": "The LP DAAC website provides detailed information on discovery, distribution, access, and support of land data products.",
+                        "URLContentType": "CollectionURL",
+                        "Type": "PROJECT HOME PAGE",
+                        "URL": "https://lpdaac.usgs.gov/"
+                    },
+                    {
+                        "Description": "The product page provides information on Science Data Set layers and links for user guides, ATBDs, data access, tools, customer support, etc.",
+                        "URLContentType": "CollectionURL",
+                        "Type": "DATA SET LANDING PAGE",
+                        "URL": "https://doi.org/10.5067/GEDI/GEDI02_A.002"
+                    },
+                    {
+                        "Description": "The data dictionary provides additional information on the Science Dataset (SDS) layers.",
+                        "URLContentType": "PublicationURL",
+                        "Type": "VIEW RELATED INFORMATION",
+                        "Subtype": "GENERAL DOCUMENTATION",
+                        "URL": "https://lpdaac.usgs.gov/documents/982/gedi_l2a_dictionary_P003_v2.html"
+                    },
+                    {
+                        "Description": "The Waveform Processing ATBD provides physical theory and mathematical procedures for the calculations used to produce the data products.",
+                        "URLContentType": "PublicationURL",
+                        "Type": "VIEW RELATED INFORMATION",
+                        "Subtype": "ALGORITHM THEORETICAL BASIS DOCUMENT (ATBD)",
+                        "URL": "https://doi.org/10.5067/DOC/GEDI/GEDI_WF_ATBD.001"
+                    },
+                    {
+                        "Description": "The Geolocation ATBD provides physical theory and mathematical procedures for the calculations used to produce the data products.",
+                        "URLContentType": "PublicationURL",
+                        "Type": "VIEW RELATED INFORMATION",
+                        "Subtype": "ALGORITHM THEORETICAL BASIS DOCUMENT (ATBD)",
+                        "URL": "https://doi.org/10.5067/DOC/GEDI/GEDI_WFGEO_ATBD.001"
+                    },
+                    {
+                        "Description": "The GEDI_L2B ATBD provides physical theory and mathematical procedures for the calculations used to produce the data products.",
+                        "URLContentType": "CollectionURL",
+                        "Type": "PROJECT HOME PAGE",
+                        "URL": "https://gedi.umd.edu/"
+                    },
+                    {
+                        "Description": "The GEDI website provides detailed information on the GEDI mission, instrument, science, applications, and data.",
+                        "URLContentType": "CollectionURL",
+                        "Type": "PROJECT HOME PAGE",
+                        "URL": "https://gedi.umd.edu/"
+                    },
+                    {
+                        "Description": "The technical information in the User's Guide enables users to interpret and use the data products.",
+                        "URLContentType": "PublicationURL",
+                        "Type": "VIEW RELATED INFORMATION",
+                        "Subtype": "USER'S GUIDE",
+                        "URL": "https://lpdaac.usgs.gov/documents/998/GEDI02_User_Guide_V21.pdf"
+                    },
+                    {
+                        "Description": "GEDI Spatial and Band/Layer Subsetting and Export to GeoJSON Script",
+                        "URLContentType": "PublicationURL",
+                        "Type": "VIEW RELATED INFORMATION",
+                        "Subtype": "HOW-TO",
+                        "URL": "https://git.earthdata.nasa.gov/projects/LPDUR/repos/gedi-subsetter/browse"
+                    },
+                    {
+                        "Description": "GEDI L1-L2 Data Resources, Access, and Visualization Demo",
+                        "URLContentType": "PublicationURL",
+                        "Type": "VIEW RELATED INFORMATION",
+                        "Subtype": "HOW-TO",
+                        "URL": "https://lpdaac.usgs.gov/resources/e-learning/accessing-and-analyzing-gedi-lidar-data-for-vegetation-studies/"
+                    },
+                    {
+                        "Description": "Browse image for Earthdata Search",
+                        "URLContentType": "VisualizationURL",
+                        "Type": "GET RELATED VISUALIZATION",
+                        "URL": "https://e4ftl01.cr.usgs.gov//WORKING/BRWS/Browse.001/2021.04.11/GEDI02_A_2020106181516_O07602_01_T04150_02_003_01_V002.png"
+                    },
+                    {
+                        "Description": "GEDI Spatial Querying and Subsetting Quick Guide",
+                        "URLContentType": "PublicationURL",
+                        "Type": "VIEW RELATED INFORMATION",
+                        "Subtype": "HOW-TO",
+                        "URL": "https://lpdaac.usgs.gov/documents/989/GEDI_Quick_Guide_V2.pdf"
+                    },
+                    {
+                        "Description": "Getting Started with GEDI L2A Version 2 Data in Python",
+                        "URLContentType": "PublicationURL",
+                        "Type": "VIEW RELATED INFORMATION",
+                        "Subtype": "HOW-TO",
+                        "URL": "https://lpdaac.usgs.gov/resources/e-learning/getting-started-gedi-l2a-version-2-data-python/"
+                    },
+                    {
+                        "Description": "Spatial Querying of GEDI Version 2 Data in R",
+                        "URLContentType": "PublicationURL",
+                        "Type": "VIEW RELATED INFORMATION",
+                        "Subtype": "HOW-TO",
+                        "URL": "https://git.earthdata.nasa.gov/projects/LPDUR/repos/gedi-finder-tutorial-r/browse"
+                    },
+                    {
+                        "Description": "Spatial Querying of GEDI Version 2 Data in Python",
+                        "URLContentType": "PublicationURL",
+                        "Type": "VIEW RELATED INFORMATION",
+                        "Subtype": "HOW-TO",
+                        "URL": "https://git.earthdata.nasa.gov/projects/LPDUR/repos/gedi-finder-tutorial-python/browse"
+                    }
+                ],
+                "Abstract": "The Global Ecosystem Dynamics Investigation (GEDI) mission aims to characterize ecosystem structure and dynamics to enable radically improved quantification and understanding of the Earth’s carbon cycle and biodiversity. The GEDI instrument produces high resolution laser ranging observations of the 3-dimensional structure of the Earth. GEDI is attached to the International Space Station (ISS) and collects data globally between 51.6° N and 51.6° S latitudes at the highest resolution and densest sampling of any light detection and ranging (lidar) instrument in orbit to date. Each GEDI Version 2 granule encompasses one-fourth of an ISS orbit and includes georeferenced metadata to allow for spatial querying and subsetting.\r\n\r\nThe purpose of the GEDI Level 2A Geolocated Elevation and Height Metrics product (GEDI02_A) is to provide waveform interpretation and extracted products from each GEDI01_B received waveform, including ground elevation, canopy top height, and relative height (RH) metrics. The methodology for generating the GEDI02_A product datasets is adapted from the Land, Vegetation, and Ice Sensor (LVIS) algorithm. The GEDI02_A product is provided in HDF5 format and has a spatial resolution (average footprint) of 25 meters. \r\n\r\nThe GEDI02_A data product contains 156 layers for each of the eight beams, including ground elevation, canopy top height, relative return energy metrics (e.g., canopy vertical structure), and many other interpreted products from the return waveforms. Additional information for the layers can be found in the GEDI Level 2A Dictionary.\r\n\r\nImprovements for Version 2\r\n* Metadata has been updated to include spatial coordinates.\r\n* Granule size has been reduced from one full ISS orbit (~5.8 GB) to four segments per orbit (~1.5 GB).\r\n* Filename has been updated to include segment number and version number.\r\n* Improved Geolocation.\r\n* Added elevation from the SRTM digital elevation model for comparison.\r\n* Modified the method to predict an optimum algorithm setting group per laser shot.\r\n* Added additional land cover datasets related to phenology, urban infrastructure, and water persistence.\r\n* Added selected_mode_flag dataset to root beam group using selected algorithm.\r\n* Removed shots when the laser is not firing.\r\n* Modified file name.\r\n",
+                "Purpose": "Science Research",
+                "LocationKeywords": [
+                    {
+                        "Category": "GEOGRAPHIC REGION",
+                        "Type": "GLOBAL"
+                    }
+                ],
+                "MetadataDates": [
+                    {
+                        "Type": "CREATE",
+                        "Date": "2020-07-24T14:05:00.000Z"
+                    },
+                    {
+                        "Type": "UPDATE",
+                        "Date": "2022-09-27T18:40:00.000Z"
+                    }
+                ],
+                "VersionDescription": "Version 2",
+                "Version": "002",
+                "Projects": [
+                    {
+                        "ShortName": "GEDI",
+                        "LongName": "Global Ecosystem Dynamics Investigation",
+                        "Campaigns": [
+                            "GEDI"
+                        ]
+                    }
+                ],
+                "CollectionDataType": "SCIENCE_QUALITY",
+                "DataCenters": [
+                    {
+                        "Roles": [
+                            "ARCHIVER"
+                        ],
+                        "ShortName": "LP DAAC",
+                        "LongName": "Land Processes Distributed Active Archive Center",
+                        "ContactGroups": [
+                            {
+                                "Roles": [
+                                    "User Services"
+                                ],
+                                "ContactInformation": {
+                                    "RelatedUrls": [
+                                        {
+                                            "Description": "The LP DAAC website provides detailed information on discovery, distribution, access, and support of land data products.",
+                                            "URLContentType": "DataContactURL",
+                                            "Type": "HOME PAGE",
+                                            "URL": "https://lpdaac.usgs.gov/"
+                                        }
+                                    ],
+                                    "ServiceHours": "M-F, 8 a.m. to 4 p.m. Central Time",
+                                    "ContactInstruction": "LP DAAC User Services is the point of contact for answering questions concerning data products, data access, and online applications.",
+                                    "ContactMechanisms": [
+                                        {
+                                            "Type": "Telephone",
+                                            "Value": "605-594-6116"
+                                        },
+                                        {
+                                            "Type": "U.S. toll free",
+                                            "Value": "866-573-3222"
+                                        },
+                                        {
+                                            "Type": "Email",
+                                            "Value": "lpdaac@usgs.gov"
+                                        }
+                                    ],
+                                    "Addresses": [
+                                        {
+                                            "StreetAddresses": [
+                                                "U.S. Geological Survey, Earth Resources Observation and Science (EROS) Center"
+                                            ],
+                                            "City": "Sioux Falls",
+                                            "StateProvince": "South Dakota",
+                                            "Country": "United States",
+                                            "PostalCode": "57198"
+                                        }
+                                    ]
+                                },
+                                "GroupName": "LP DAAC User Services"
+                            }
+                        ],
+                        "ContactInformation": {
+                            "RelatedUrls": [
+                                {
+                                    "Description": "The LP DAAC website provides detailed information on discovery, distribution, access, and support of land data products.",
+                                    "URLContentType": "DataCenterURL",
+                                    "Type": "HOME PAGE",
+                                    "URL": "https://lpdaac.usgs.gov/"
+                                }
+                            ],
+                            "ServiceHours": "M-F, 8 a.m. to 4 p.m. Central Time",
+                            "ContactInstruction": "LP DAAC User Services is the point of contact for answering questions concerning data products, data access, and online applications.",
+                            "ContactMechanisms": [
+                                {
+                                    "Type": "Telephone",
+                                    "Value": "605-594-6116"
+                                },
+                                {
+                                    "Type": "U.S. toll free",
+                                    "Value": "866-573-3222"
+                                },
+                                {
+                                    "Type": "Email",
+                                    "Value": "lpdaac@usgs.gov"
+                                }
+                            ],
+                            "Addresses": [
+                                {
+                                    "StreetAddresses": [
+                                        "U.S. Geological Survey, Earth Resources Observation and Science (EROS) Center"
+                                    ],
+                                    "City": "Sioux Falls",
+                                    "StateProvince": "South Dakota",
+                                    "Country": "United States",
+                                    "PostalCode": "57198"
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "Roles": [
+                            "PROCESSOR"
+                        ],
+                        "ShortName": "NASA/GSFC/GEDI",
+                        "LongName": "Global Ecosystem Dynamics Investigation, Goddard Space Flight Center, NASA"
+                    }
+                ],
+                "Platforms": [
+                    {
+                        "Type": "Space Stations/Manned Spacecraft",
+                        "ShortName": "ISS",
+                        "LongName": "International Space Station",
+                        "Instruments": [
+                            {
+                                "ShortName": "GEDI",
+                                "LongName": "Global Ecosystem Dynamics Investigation",
+                                "ComposedOf": [
+                                    {
+                                        "ShortName": "LIDAR",
+                                        "LongName": "Light Detection and Ranging"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "MetadataSpecification": {
+                    "URL": "https://cdn.earthdata.nasa.gov/umm/collection/v1.17.1",
+                    "Name": "UMM-C",
+                    "Version": "1.17.1"
+                },
+                "ArchiveAndDistributionInformation": {
+                    "FileArchiveInformation": [
+                        {
+                            "FormatType": "Native",
+                            "AverageFileSize": 7,
+                            "Format": "HDF5",
+                            "TotalCollectionFileSizeBeginDate": "2019-03-25T00:00:00.000Z",
+                            "AverageFileSizeUnit": "GB"
+                        }
+                    ],
+                    "FileDistributionInformation": [
+                        {
+                            "FormatType": "Native",
+                            "AverageFileSize": 7,
+                            "Format": "HDF5",
+                            "TotalCollectionFileSizeBeginDate": "2019-03-25T00:00:00.000Z",
+                            "AverageFileSizeUnit": "GB",
+                            "Media": [
+                                "https"
+                            ]
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}
