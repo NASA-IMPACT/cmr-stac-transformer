@@ -60,8 +60,7 @@ def transform(collection: CmrUmmJsonCollection, stac_root = ''):
         extent = extent,
         href = f'{stac_root}/stac/collections/{collection.ShortName}'
     )
-    for cmr_link in [collection.RelatedUrls[0]]:
-        print(cmr_link)
+    for cmr_link in collection.RelatedUrls:
         stac_collection.add_link(
             pystac.Link(
                 target = cmr_link.URL,
