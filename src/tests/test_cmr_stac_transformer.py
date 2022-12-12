@@ -66,6 +66,15 @@ def test_keywords():
     assert(collection_instance.keyword_list() == keyword_list)
     assert(stac_instance.keywords == keyword_list)
 
+def test_data_centers():
+    pass
+
+def test_platforms():
+    pass
+
+def test_doi():
+    pass
+
 def test_valid():
     assert(pystac.validation.validate(stac_instance))
 
