@@ -49,6 +49,23 @@ def test_links():
     assert(stac_instance.links[2].target == 'https://search.earthdata.nasa.gov/search?q=C1908348134-LPDAAC_ECS')
     assert(stac_instance.links[2].rel == 'DistributionURL')
 
+def test_keywords():
+    keyword_list = [
+        'EARTH SCIENCE',
+        'LAND SURFACE',
+        'TOPOGRAPHY',
+        'SPECTRAL/ENGINEERING',
+        'LIDAR',
+        'BIOSPHERE',
+        'VEGETATION',
+        'PLANT PHENOLOGY',
+        'VEGETATION COVER',
+        'CANOPY CHARACTERISTICS',
+        'VEGETATION HEIGHT',
+    ]
+    assert(collection_instance.keyword_list() == keyword_list)
+    assert(stac_instance.keywords == keyword_list)
+
 def test_valid():
     assert(pystac.validation.validate(stac_instance))
 

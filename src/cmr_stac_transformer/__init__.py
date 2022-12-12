@@ -36,6 +36,13 @@ class CmrDateRange(BaseModel):
 class TemporalExtents(BaseModel):
     RangeDateTimes: list[CmrDateRange]
 
+class CmrScienceKeyword(BaseModel):
+    Category: str
+    Topic: str
+    Term: str
+    VariableLevel1: Optional[str]
+    VariableLevel2: Optional[str]
+
 class CmrUmmJsonCollection(BaseModel):
     ShortName: str
     EntryTitle: str
@@ -43,6 +50,16 @@ class CmrUmmJsonCollection(BaseModel):
     RelatedUrls: list[RelatedUrls]
     SpatialExtent: SpatialExtent
     TemporalExtents: list[TemporalExtents]
+    ScienceKeywords: Optional[list[CmrScienceKeyword]]
+
+    def keyword_list(self):
+        keyword_list = []
+        for keyword in self.ScienceKeywords:
+            strings = keyword.dict().values()
+            for s in strings:
+                if s is not None and s not in keyword_list:
+                    keyword_list.append(s)
+        return keyword_list
 
 def transform(collection: CmrUmmJsonCollection, stac_root = ''):
     temporal_interval = [
@@ -58,7 +75,8 @@ def transform(collection: CmrUmmJsonCollection, stac_root = ''):
         title = collection.EntryTitle,
         description = collection.Abstract,
         extent = extent,
-        href = f'{stac_root}/stac/collections/{collection.ShortName}'
+        href = f'{stac_root}/stac/collections/{collection.ShortName}',
+        keywords = collection.keyword_list()
     )
     for cmr_link in collection.RelatedUrls:
         stac_collection.add_link(
